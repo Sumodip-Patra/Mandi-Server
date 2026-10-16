@@ -58,13 +58,13 @@ if __name__ == "__main__":
     import asyncio
     async def main():
         commodities= await get_commodities()
-       # print("Commodities:", commodities)
+        print("Commodities:", commodities)
 
         states= await get_states()
         print("States:", states)
 
         mandis= await get_mandis(27)
-        #print("Mandis in Maharashtra:", mandis)
+        print("Mandis in Maharashtra:", mandis)
 
         prices= await get_commodity_prices(1, 27, 520)
         print("Prices for Wheat in Maharashtra, Pune:", prices)
